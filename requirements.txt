@@ -1,0 +1,4 @@
+requests-cache
+requests
+openpyxl
+scikit-learn
