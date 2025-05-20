@@ -4,9 +4,15 @@ version = "0.0.1"
 authors = [
   { name="Infinnitor" },
 ]
-description = ""
+description = "A small library for handling transformations on different data types"
 readme = "README.md"
 requires-python = ">=3.12"
+dependencies = [
+	"requests-cache",
+	"requests",
+	"openpyxl"
+]
+
 classifiers = [
     "Programming Language :: Python :: 3",
     "Operating System :: OS Independent",
