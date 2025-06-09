@@ -12,10 +12,11 @@ def tabular_to_dict(headers):
 
 @hints.jsplitter
 def header_tabular_to_dict(iterable):
-    headers = next(iter(iterable))
+    it = iter(iterable)
+    headers = next(it)
     func = tabular_to_dict(headers).job
 
-    for item in iterable:
+    for item in it:
         yield func(item)
 
 
