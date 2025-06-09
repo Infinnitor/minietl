@@ -28,7 +28,7 @@ def dict_to_object(item):
 def dict_to_tabular(iterable):
     items = list(iterable)
 
-    headers = {}
+    headers = set()
     for item in items:
         for k in item.keys():
             headers.add(k)

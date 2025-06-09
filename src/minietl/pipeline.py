@@ -119,8 +119,11 @@ class Pipeline:
                 case ".csv":
                     writer = csv.writer(fp)
                     for d in self._result:
-                        row = list(d) if not isinstance(d, list) else d
-                        writer.writerow(row)
+                        try:
+                            row = list(d) if not isinstance(d, list) else d
+                            writer.writerow(row)
+                        except TypeError as e:
+                            logging.critical("TypeError: Row was not iterable")
                 case ".json":
                     json.dump(self._result, fp)
 

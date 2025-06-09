@@ -41,3 +41,6 @@ def get_data_auto(path: PathType):
             return get_csv_data(path)
         case "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet":
             return get_excel_data(path)
+
+def write_data_auto(path: PathType):
+    pass
