@@ -1,6 +1,6 @@
 from . import hints
 from types import SimpleNamespace
-from typing
+from typing import Iterable
 
 def tabular_to_dict(headers);
     def inner(row):
