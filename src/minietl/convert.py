@@ -2,7 +2,7 @@ from . import hints
 from types import SimpleNamespace
 from typing import Iterable
 
-def tabular_to_dict(headers);
+def tabular_to_dict(headers):
     def inner(row):
         zipped = zip(headers, row)
         return {k: v for k, v in zipped}
