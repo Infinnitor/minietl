@@ -10,7 +10,7 @@ PathType = str | PathLike
 
 
 def get_csv_data(path: PathType):
-    with open(path, "r") as fp:
+    with open(path, "r", encoding="utf-8") as fp:
         reader = csv.reader(fp)
         return list(reader)
 
